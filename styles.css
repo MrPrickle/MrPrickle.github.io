@@ -50,26 +50,35 @@ body {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+    display: none;
     overflow: hidden;
 }
 
 .map-container:hover .map-widget {
-    opacity: 1;
-    visibility: visible;
+    display: block;
 }
 
-/* Ensure the map widget iframe is properly contained */
-.map-widget iframe {
+.map-iframe-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#mapmyvisitors-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#mapmyvisitors-container iframe {
     width: 100%;
     height: 100%;
     border: none;
-    display: none;
 }
 
-.map-container:hover .map-widget iframe {
+.map-container:hover #mapmyvisitors-container {
     display: block;
 }
 
