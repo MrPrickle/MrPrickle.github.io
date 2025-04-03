@@ -51,17 +51,16 @@ body {
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     display: none;
-    overflow: hidden;
 }
 
 .map-container:hover .map-widget {
     display: block;
 }
 
-.map-iframe-container {
+.map-widget iframe {
     width: 100%;
     height: 100%;
-    position: relative;
+    border: none;
 }
 
 #mapmyvisitors-container {
